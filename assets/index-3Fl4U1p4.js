@@ -161,7 +161,7 @@ Error generating stack: `+o.message+`
       text-decoration: underline;
     }
   }
-`,Jx=()=>P.jsxs(qx,{children:[P.jsx("div",{children:"Designed & Built by [Your Name]"}),P.jsx("div",{children:P.jsx("a",{href:"https://github.com/yourusername",target:"_blank",rel:"noopener noreferrer",children:"View Source on GitHub"})})]}),ew=N.main`
+`,Jx=()=>P.jsxs(qx,{children:[P.jsx("div",{children:"Designed & Built by Saahil Sawant"}),P.jsx("div",{children:P.jsx("a",{href:"https://github.com/Saahil-23/Portfolio",target:"_blank",rel:"noopener noreferrer",children:"View Source on GitHub"})})]}),ew=N.main`
   padding: 0 150px; // Adjust padding as needed
   margin: 0 auto;
   max-width: 1600px;
@@ -484,7 +484,7 @@ Error generating stack: `+o.message+`
   color: ${({theme:e})=>e.colors.textDark};
   line-height: 1.6;
   margin-bottom: 3rem;
-`,TS={hidden:{opacity:0,y:50},visible:{opacity:1,y:0,transition:{duration:.5,staggerChildren:.2}}},yo={hidden:{opacity:0,y:20},visible:{opacity:1,y:0}},ES=()=>P.jsx(SS,{id:"contact",children:P.jsxs(K.div,{style:{width:"100%",display:"flex",flexDirection:"column",alignItems:"center"},variants:TS,initial:"hidden",whileInView:"visible",viewport:{once:!0},children:[P.jsx(K.div,{variants:yo,children:P.jsx(kS,{children:"04. What’s Next?"})}),P.jsx(K.div,{variants:yo,children:P.jsx(PS,{children:"Get In Touch"})}),P.jsx(K.div,{variants:yo,children:P.jsx(CS,{children:"My inbox is always open. Whether you have a question, a project proposal, or just want to say hello, I’ll get back to you! Feel free to reach out about any opportunities."})}),P.jsx(K.div,{variants:yo,children:P.jsx(O1,{href:"mailto:your.email@example.com",children:"Say Hello"})})]})}),AS=N.div`
+`,TS={hidden:{opacity:0,y:50},visible:{opacity:1,y:0,transition:{duration:.5,staggerChildren:.2}}},yo={hidden:{opacity:0,y:20},visible:{opacity:1,y:0}},ES=()=>P.jsx(SS,{id:"contact",children:P.jsxs(K.div,{style:{width:"100%",display:"flex",flexDirection:"column",alignItems:"center"},variants:TS,initial:"hidden",whileInView:"visible",viewport:{once:!0},children:[P.jsx(K.div,{variants:yo,children:P.jsx(kS,{children:"04. What’s Next?"})}),P.jsx(K.div,{variants:yo,children:P.jsx(PS,{children:"Get In Touch"})}),P.jsx(K.div,{variants:yo,children:P.jsx(CS,{children:"My inbox is always open. Whether you have a question, a project proposal, or just want to say hello, I’ll get back to you! Feel free to reach out about any opportunities."})}),P.jsx(K.div,{variants:yo,children:P.jsx(O1,{href:"mailto:saahil.sawant24@gmail.com",children:"Say Hello"})})]})}),AS=N.div`
   background-color: ${({theme:e})=>e.colors.darkBg};
 `;function MS(){return P.jsxs(AS,{children:[P.jsx(rw,{}),P.jsxs(tw,{children:[P.jsx(gw,{}),P.jsx(Mw,{}),P.jsx(Yw,{}),P.jsx(wS,{}),P.jsx(ES,{})]})]})}const DS={colors:{darkBg:"#0a192f",lightBg:"#112240",primary:"#64ffda",primary_tint:"rgba(100, 255, 218, 0.1)",textLight:"#ccd6f6",textMedium:"#a8b2d1",textDark:"#8892b0",glassBg:"rgba(255, 255, 255, 0.05)",glassBorder:"rgba(255, 255, 255, 0.1)",navBg:"rgba(10, 25, 47, 0.85)"},fonts:{sans:'Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif',mono:"SF Mono, Fira Code, Fira Mono, Roboto Mono, monospace"},fontSizes:{xs:"0.75rem",sm:"0.875rem",md:"1rem",lg:"1.125rem",xl:"1.25rem",xxl:"1.5rem",h3:"2rem",h2:"3rem",h1:"4rem"},breakpoints:{mobile:"480px",tablet:"768px",laptop:"1024px",desktop:"1200px"},borderRadius:"4px",transition:"all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"},RS=m2`
   // --- CSS VARIABLES ---
