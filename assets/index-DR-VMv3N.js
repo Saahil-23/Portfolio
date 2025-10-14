@@ -528,7 +528,7 @@ Error generating stack: `+o.message+`
       color: ${({theme:e})=>e.colors.textLight};
     }
   }
-`,_6={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.1}}},V6={hidden:{scale:.8,opacity:0},visible:{scale:1,opacity:1}},N6=()=>S.jsxs(A6,{id:"skills",children:[S.jsx(Qs,{number:"03",title:"My Tech & Tools"}),S.jsx(M6,{children:E6.map((e,t)=>S.jsxs(D6,{children:[S.jsx(R6,{children:e.category}),S.jsx(L6,{variants:_6,initial:"hidden",whileInView:"visible",viewport:{once:!0,amount:.2},children:e.skills.map((n,r)=>S.jsxs(j6,{variants:V6,children:[n.icon,S.jsx("span",{children:n.name})]},r))})]},t))})]}),z6=_.section`
+`,_6={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.1}}},V6={hidden:{scale:.8,opacity:0},visible:{scale:1,opacity:1}},N6=()=>S.jsxs(A6,{id:"skills",children:[S.jsx(Qs,{number:"04",title:"My Tech & Tools"}),S.jsx(M6,{children:E6.map((e,t)=>S.jsxs(D6,{children:[S.jsx(R6,{children:e.category}),S.jsx(L6,{variants:_6,initial:"hidden",whileInView:"visible",viewport:{once:!0,amount:.2},children:e.skills.map((n,r)=>S.jsxs(j6,{variants:V6,children:[n.icon,S.jsx("span",{children:n.name})]},r))})]},t))})]}),z6=_.section`
   padding: 100px 0;
   display: flex;
   justify-content: center;
@@ -536,10 +536,13 @@ Error generating stack: `+o.message+`
   min-height: 80vh;
 `,I6=_(B1)`
   max-width: 650px;
-  text-align: center;
+  width: 100%;
+  // Key Change: Align everything inside the card to the left
+  text-align: left; 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // Key Change: Align items to the start (left) instead of center
+  align-items: flex-start; 
 `,$6=_.h3`
   font-family: ${({theme:e})=>e.fonts.mono};
   color: ${({theme:e})=>e.colors.primary};
@@ -554,7 +557,7 @@ Error generating stack: `+o.message+`
   color: ${({theme:e})=>e.colors.textDark};
   line-height: 1.6;
   margin-bottom: 2.5rem;
-  max-width: 90%;
+  max-width: 100%; // Let it take the full width of the card
 `,B6=_(U.a)`
   display: inline-block;
   background-color: transparent;
@@ -578,7 +581,8 @@ Error generating stack: `+o.message+`
   padding-top: 1.5rem;
   border-top: 1px solid ${({theme:e})=>e.colors.glassBorder};
   display: flex;
-  justify-content: center;
+  // Key Change: Justify to the start (left)
+  justify-content: flex-start; 
   align-items: center;
   gap: 2.5rem;
 
@@ -597,7 +601,7 @@ Error generating stack: `+o.message+`
       transform: translateY(-5px);
     }
   }
-`,U6={hidden:{opacity:0,scale:.9},visible:{opacity:1,scale:1,transition:{duration:.6,ease:[.16,1,.3,1],staggerChildren:.1}}},Hr={hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.5}}},W6=()=>{const e=[{url:"https://github.com/Saahil-23",icon:S.jsx(F1,{}),label:"GitHub"},{url:"https://www.linkedin.com/in/saahil-sawant-9b88b6302/",icon:S.jsx(Bw,{}),label:"LinkedIn"},{url:"https://www.instagram.com/saahil_sawant_/",icon:S.jsx(Fw,{}),label:"Instagram"},{url:"https://discord.com/users/zennon0638",icon:S.jsx(f6,{}),label:"Discord"}];return S.jsx(z6,{id:"contact",children:S.jsxs(I6,{variants:U6,initial:"hidden",whileInView:"visible",viewport:{once:!0,amount:.3},children:[S.jsx(U.div,{variants:Hr,children:S.jsx($6,{children:"04. What’s Next?"})}),S.jsx(U.div,{variants:Hr,children:S.jsx(O6,{children:"Initiate Contact"})}),S.jsx(U.div,{variants:Hr,children:S.jsx(F6,{children:"I'm currently seeking new opportunities and am always open to interesting collaborations. My inbox is ready for your transmission."})}),S.jsx(U.div,{variants:Hr,children:S.jsx(B6,{href:"mailto:saahil.sawant24@gmail.com",children:"saahil.sawant24@gmail.com"})}),S.jsx(b6,{variants:Hr,children:e.map(t=>S.jsx("a",{href:t.url,target:"_blank",rel:"noopener noreferrer","aria-label":t.label,children:t.icon},t.label))})]})})},H6=_.div`
+`,U6={hidden:{opacity:0,scale:.9},visible:{opacity:1,scale:1,transition:{duration:.6,ease:[.16,1,.3,1],staggerChildren:.1}}},Hr={hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.5}}},W6=()=>{const e=[{url:"https://github.com/Saahil-23",icon:S.jsx(F1,{}),label:"GitHub"},{url:"https://www.linkedin.com/in/saahil-sawant-9b88b6302/",icon:S.jsx(Bw,{}),label:"LinkedIn"},{url:"https://www.instagram.com/saahil_sawant_/",icon:S.jsx(Fw,{}),label:"Instagram"},{url:"https://discord.com/users/zennon0638",icon:S.jsx(f6,{}),label:"Discord"}];return S.jsx(z6,{id:"contact",children:S.jsxs(I6,{variants:U6,initial:"hidden",whileInView:"visible",viewport:{once:!0,amount:.3},children:[S.jsx(U.div,{variants:Hr,children:S.jsx($6,{children:"05. What’s Next?"})}),S.jsx(U.div,{variants:Hr,children:S.jsx(O6,{children:"Initiate Contact"})}),S.jsx(U.div,{variants:Hr,children:S.jsx(F6,{children:"I’m open to new professional opportunities and collaborations that inspire innovation. My inbox is always open for thoughtful discussions and potential partnerships."})}),S.jsx(U.div,{variants:Hr,children:S.jsx(B6,{href:"mailto:saahil.sawant24@gmail.com",children:"saahil.sawant24@gmail.com"})}),S.jsx(b6,{variants:Hr,children:e.map(t=>S.jsx("a",{href:t.url,target:"_blank",rel:"noopener noreferrer","aria-label":t.label,children:t.icon},t.label))})]})})},H6=_.div`
   background-color: ${({theme:e})=>e.colors.darkBg};
 `;function K6(){return S.jsxs(H6,{children:[S.jsx(iw,{}),S.jsxs(nw,{children:[S.jsx(vw,{}),S.jsx(Rw,{}),S.jsx(qw,{}),S.jsx(u6,{}),S.jsx(N6,{}),S.jsx(W6,{})]})]})}const G6={colors:{darkBg:"#0a192f",lightBg:"#112240",primary:"#64ffda",primary_tint:"rgba(100, 255, 218, 0.1)",textLight:"#ccd6f6",textMedium:"#a8b2d1",textDark:"#8892b0",glassBg:"rgba(255, 255, 255, 0.05)",glassBorder:"rgba(255, 255, 255, 0.1)",navBg:"rgba(10, 25, 47, 0.85)"},fonts:{sans:'Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif',mono:"SF Mono, Fira Code, Fira Mono, Roboto Mono, monospace"},fontSizes:{xs:"0.75rem",sm:"0.875rem",md:"1rem",lg:"1.125rem",xl:"1.25rem",xxl:"1.5rem",h3:"2rem",h2:"3rem",h1:"4rem"},breakpoints:{mobile:"480px",tablet:"768px",laptop:"1024px",desktop:"1200px"},borderRadius:"4px",transition:"all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"},Y6=g2`
   // --- CSS VARIABLES ---
