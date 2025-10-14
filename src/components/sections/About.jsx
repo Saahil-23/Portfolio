@@ -104,26 +104,25 @@ const StyledPic = styled(motion.div)`
 
 const About = () => {
   return (
-    <AboutSection id="about">
-      <AnimatedHeading number="01" title="About Me" />
-      <AboutContent>
-        <TextBlock
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          {/* Your bio text remains the same */}
-          <p>
-            Hello! I'm Saahil Sawant, a passionate Developer and competitive CTF player. I thrive in high-pressure environments, a skill I've honed by placing in the top 10 at hackathons and consistently ranking among the top 20 in Capture The Flag competitions.
-          </p>
-          <p>
-            My background as a former rifle shooter has instilled in me a deep appreciation for precision and focus—qualities I bring to every line of code. My passion lies at the intersection of building clean, futuristic web experiences and dissecting complex security challenges.
-          </p>
-          <p>
-            I'm driven by the thrill of understanding how systems work and making them better, creating applications that are not just functional and elegant, but also performant and secure.
-          </p>
-        </TextBlock>
+   <AboutSection id="about">
+  <AnimatedHeading number="01" title="About Me" />
+  <AboutContent>
+    <TextBlock
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+    >
+      <p>
+        Hello! I%apos%m Saahil Sawant, a passionate Developer and Cyber Security enthusiast currently studying at Shah and Anchor Kutchhi Engineering College. I actively participate in Capture The Flag (CTF) competitions and hackathons, where I enjoy tackling real-world security and development challenges.
+      </p>
+      <p>
+        My background as a former rifle shooter has instilled in me a deep appreciation for precision and focus, qualities I bring to every line of code. I thrive in high-pressure environments, having placed in the top 10 at hackathons and consistently ranking among the top 20 in CTF competitions.
+      </p>
+      <p>
+        I%apos%m driven by the thrill of understanding how systems work and making them better, creating applications that are not only functional and elegant but also performant and secure.
+      </p>
+    </TextBlock>
 
         <StyledPic
           initial={{ opacity: 0, scale: 0.8 }}
@@ -137,6 +136,7 @@ const About = () => {
         </StyledPic>
       </AboutContent>
     </AboutSection>
+
   );
 };
 
