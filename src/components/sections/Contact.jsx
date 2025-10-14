@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
 import { FaDiscord } from 'react-icons/fa';
-import GlassCard from '../common/GlassCard'; // Import the GlassCard
+import GlassCard from '../common/GlassCard';
 
-// --- STYLED COMPONENTS (New "Sexy & Futuristic" Design) ---
+// --- STYLED COMPONENTS (Left-Aligned Professional Layout) ---
 
 const ContactSection = styled.section`
   padding: 100px 0;
@@ -17,10 +17,13 @@ const ContactSection = styled.section`
 // A new container that uses the GlassCard for the futuristic panel effect
 const ContactCard = styled(GlassCard)`
   max-width: 650px;
-  text-align: center;
+  width: 100%;
+  // Key Change: Align everything inside the card to the left
+  text-align: left; 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // Key Change: Align items to the start (left) instead of center
+  align-items: flex-start; 
 `;
 
 const Subtitle = styled.h3`
@@ -41,10 +44,9 @@ const Description = styled.p`
   color: ${({ theme }) => theme.colors.textDark};
   line-height: 1.6;
   margin-bottom: 2.5rem;
-  max-width: 90%;
+  max-width: 100%; // Let it take the full width of the card
 `;
 
-// A glowing, futuristic button to replace the simple text link
 const StyledEmailButton = styled(motion.a)`
   display: inline-block;
   background-color: transparent;
@@ -64,14 +66,14 @@ const StyledEmailButton = styled(motion.a)`
   }
 `;
 
-// An integrated social bar with a separator line
 const SocialBar = styled(motion.div)`
   width: 100%;
   margin-top: 3rem;
   padding-top: 1.5rem;
   border-top: 1px solid ${({ theme }) => theme.colors.glassBorder};
   display: flex;
-  justify-content: center;
+  // Key Change: Justify to the start (left)
+  justify-content: flex-start; 
   align-items: center;
   gap: 2.5rem;
 
@@ -101,7 +103,7 @@ const cardVariants = {
     scale: 1,
     transition: {
       duration: 0.6,
-      ease: [0.16, 1, 0.3, 1], // A smoother, more dynamic ease
+      ease: [0.16, 1, 0.3, 1],
       staggerChildren: 0.1,
     },
   },
@@ -131,7 +133,8 @@ const Contact = () => {
         viewport={{ once: true, amount: 0.3 }}
       >
         <motion.div variants={itemVariants}>
-          <Subtitle>04. What’s Next?</Subtitle>
+          {/* Remember to update this number if you changed the order */}
+          <Subtitle>05. What’s Next?</Subtitle>
         </motion.div>
 
         <motion.div variants={itemVariants}>
@@ -140,7 +143,7 @@ const Contact = () => {
 
         <motion.div variants={itemVariants}>
           <Description>
-            I'm currently seeking new opportunities and am always open to interesting collaborations. My inbox is ready for your transmission.
+            I’m open to new professional opportunities and collaborations that inspire innovation. My inbox is always open for thoughtful discussions and potential partnerships.
           </Description>
         </motion.div>
 
