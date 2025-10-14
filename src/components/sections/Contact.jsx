@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import AnimatedHeading from '../common/AnimatedHeading';
 import FuturisticButton from '../common/FuturisticButton';
+import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
+import { FaDiscord } from 'react-icons/fa';
+
+// --- STYLED COMPONENTS ---
 
 const ContactSection = styled.section`
   padding: 100px 0;
@@ -33,6 +37,33 @@ const Description = styled.p`
   margin-bottom: 3rem;
 `;
 
+// New: Social media links wrapper
+const SocialLinksWrapper = styled(motion.div)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+  a {
+    color: ${({ theme }) => theme.colors.textMedium};
+    padding: 0.5rem;
+    transition: ${({ theme }) => theme.transition};
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.primary};
+      transform: translateY(-3px);
+    }
+  }
+`;
+
+// --- ANIMATION VARIANTS ---
+
 const containerVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -40,7 +71,7 @@ const containerVariants = {
     y: 0,
     transition: {
       duration: 0.5,
-      staggerChildren: 0.2,
+      staggerChildren: 0.15,
     },
   },
 };
@@ -50,7 +81,17 @@ const itemVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
+// --- THE COMPONENT ---
+
 const Contact = () => {
+  // Array of your social links for cleaner code
+  const socialLinks = [
+    { url: 'https://github.com/Saahil-23', icon: <FiGithub />, label: 'GitHub' },
+    { url: 'https://www.linkedin.com/in/saahil-sawant-9b88b6302/', icon: <FiLinkedin />, label: 'LinkedIn' },
+    { url: 'https://www.instagram.com/saahil_sawant_/', icon: <FiInstagram />, label: 'Instagram' },
+    { url: 'https://discord.com/users/zennon0638', icon: <FaDiscord />, label: 'Discord' },
+  ];
+
   return (
     <ContactSection id="contact">
       <motion.div
@@ -63,20 +104,31 @@ const Contact = () => {
         <motion.div variants={itemVariants}>
           <Subtitle>04. What’s Next?</Subtitle>
         </motion.div>
+
         <motion.div variants={itemVariants}>
           <Title>Get In Touch</Title>
         </motion.div>
+
         <motion.div variants={itemVariants}>
           <Description>
             My inbox is always open. Whether you have a question, a project proposal, or just want to
             say hello, I’ll get back to you! Feel free to reach out about any opportunities.
           </Description>
         </motion.div>
+
         <motion.div variants={itemVariants}>
           <FuturisticButton href="mailto:saahil.sawant24@gmail.com">
             Say Hello
           </FuturisticButton>
         </motion.div>
+
+        <SocialLinksWrapper variants={itemVariants}>
+          {socialLinks.map((social) => (
+            <a key={social.label} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.label}>
+              {social.icon}
+            </a>
+          ))}
+        </SocialLinksWrapper>
       </motion.div>
     </ContactSection>
   );
