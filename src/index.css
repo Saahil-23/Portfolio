@@ -1,0 +1,32 @@
+/* src/index.css */
+
+/* 
+  Use this file to import your custom fonts. 
+  Make sure you have the font files (e.g., .woff2) in your /public/fonts/ directory.
+  This is just an example of how you would do it. Replace with your actual font files.
+*/
+
+/*
+@font-face {
+  font-family: 'Calibre';
+  src: url('/fonts/Calibre-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('/fonts/Calibre-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('/fonts/SFMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+/* You can leave this file empty if you are not using custom local fonts */
