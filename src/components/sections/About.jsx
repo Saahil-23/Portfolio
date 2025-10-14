@@ -114,13 +114,13 @@ const About = () => {
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       <p>
-        Hello! I%apos%m Saahil Sawant, a passionate Developer and Cyber Security enthusiast currently studying at Shah and Anchor Kutchhi Engineering College. I actively participate in Capture The Flag (CTF) competitions and hackathons, where I enjoy tackling real-world security and development challenges.
+        Hello! I'm Saahil Sawant, a passionate Developer and Cyber Security enthusiast currently studying at Shah and Anchor Kutchhi Engineering College. I actively participate in Capture The Flag (CTF) competitions and hackathons, where I enjoy tackling real-world security and development challenges.
       </p>
       <p>
         My background as a former rifle shooter has instilled in me a deep appreciation for precision and focus, qualities I bring to every line of code. I thrive in high-pressure environments, having placed in the top 10 at hackathons and consistently ranking among the top 20 in CTF competitions.
       </p>
       <p>
-        I%apos%m driven by the thrill of understanding how systems work and making them better, creating applications that are not only functional and elegant but also performant and secure.
+        I'm driven by the thrill of understanding how systems work and making them better, creating applications that are not only functional and elegant but also performant and secure.
       </p>
     </TextBlock>
 
