@@ -20,9 +20,9 @@ const StyledFooter = styled.footer`
 const Footer = () => {
   return (
     <StyledFooter>
-      <div>Designed & Built by [Your Name]</div>
+      <div>Designed & Built by Saahil Sawant</div>
       <div>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Saahil-23/Portfolio" target="_blank" rel="noopener noreferrer">
           View Source on GitHub
         </a>
       </div>
