@@ -189,7 +189,7 @@ const Navbar = () => {
             </NavLink>
           ))}
           <motion.div variants={navLinkItemVariants}>
-            <ResumeButton href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <ResumeButton href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noopener noreferrer">
               Resume
             </ResumeButton>
           </motion.div>
@@ -220,7 +220,7 @@ const Navbar = () => {
               </li>
             ))}
              <li>
-                <ResumeButton href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={{fontSize: '1rem', padding: '1rem 2rem'}}>
+                <ResumeButton href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noopener noreferrer" style={{fontSize: '1rem', padding: '1rem 2rem'}}>
                   Resume
                 </ResumeButton>
             </li>

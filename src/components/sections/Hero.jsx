@@ -77,8 +77,8 @@ const Hero = () => {
         
         <motion.div variants={itemVariants} style={{ marginTop: '50px' }}>
           {/* Make sure to place your resume in the 'public' folder */}
-          <FuturisticButton href="/resume.pdf">
-            View My Resume
+          <FuturisticButton href={`${import.meta.env.BASE_URL}resume.pdf`}>
+             View My Resume
           </FuturisticButton>
         </motion.div>
       </motion.div>
