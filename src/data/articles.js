@@ -5,7 +5,7 @@ export const articlesData = [
   {
     title: 'A Hands-On Introduction to Cybersecurity with TryHackMe',
     description: 'This article walks you through the fundamentals of cybersecurity, providing a practical, hands-on experience by following the popular Cybersecurity 101 path on TryHackMe.',
-    link: 'https://your-blog-platform.com/article-1',
+    link: 'https://github.com/Saahil-23/Portfolio/blob/main/public/CCIDF.md',
   },
   {
     title: 'Applications of Finite Automata in Text Search and Pattern Matching',
