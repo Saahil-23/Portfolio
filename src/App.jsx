@@ -5,6 +5,7 @@ import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Projects from './components/sections/Projects';
 import Articles from './components/sections/Articles';
+import VideoCarousel from './components/sections/VideoCarousel';
 import Skills from './components/sections/Skills';
 import Contact from './components/sections/Contact';
 
@@ -21,6 +22,7 @@ function App() {
         <About />
         <Projects />
         <Articles />
+         <VideoCarousel />
         <Skills />
         <Contact />
       </Layout>

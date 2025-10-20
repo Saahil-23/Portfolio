@@ -87,7 +87,7 @@ const itemVariants = {
 const Skills = () => {
   return (
     <SkillsSection id="skills">
-      <AnimatedHeading number="04" title="My Tech & Tools" />
+      <AnimatedHeading number="05" title="My Tech & Tools" />
       <SkillsContainer>
         {skillsData.map((category, index) => (
           <CategoryWrapper key={index}>

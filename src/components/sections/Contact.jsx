@@ -134,7 +134,7 @@ const Contact = () => {
       >
         <motion.div variants={itemVariants}>
           {/* Remember to update this number if you changed the order */}
-          <Subtitle>05. What’s Next?</Subtitle>
+          <Subtitle>06. What’s Next?</Subtitle>
         </motion.div>
 
         <motion.div variants={itemVariants}>

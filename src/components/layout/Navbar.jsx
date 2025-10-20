@@ -163,7 +163,7 @@ const mobileMenuVariants = {
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const links = ['About', 'Projects','Articles', 'Skills', 'Contact'];
+  const links = ['About', 'Projects','Articles','Videos', 'Skills', 'Contact'];
 
   // Prevent scrolling when mobile menu is open
   useEffect(() => {
