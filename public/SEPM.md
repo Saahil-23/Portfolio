@@ -174,5 +174,3 @@ Agile is not just a method — it’s a **mindset** that drives innovation, team
 
 
 
-Would you like me to give you an alternate **draw.io XML code** version of the flowchart (so you can directly import and export PNG from draw.io)?
-
